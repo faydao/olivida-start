@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="app.yaml : OLIVIDA Start Page" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>app.yaml</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/faydao/olivida-start">View on GitHub</a>
+
+          <h1 id="project_title">app.yaml</h1>
+          <h2 id="project_tagline">OLIVIDA Start Page</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/faydao/olivida-start/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/faydao/olivida-start/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>application: staarrt
+version: 1029
+runtime: python
+api_version: 1</p>
+
+<p>handlers:</p>
+
+<ul>
+<li><p>url: /favicon.ico
+static_files: static/shared/favicon.ico
+upload: static/shared/favicon.ico</p></li>
+<li><p>url: /static
+static_dir: static</p></li>
+<li><p>url: .*
+script: main.py</p></li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">app.yaml maintained by <a href="https://github.com/faydao">faydao</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
